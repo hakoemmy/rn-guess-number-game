@@ -27,8 +27,8 @@
 
 ### How can I setup the project locally?
 - First of all, download and install [Nodejs](https://nodejs.org/en/) on your PC
-- Clone the repo by clicking [here](https://github.com/hakoemmy/scheduler-rn-app.git)
-- Open the terminal in the root directory called ```scheduler-rn-app/```
+- Clone the repo by clicking [here](https://github.com/hakoemmy/rn-guess-number-game.git)
+- Open the terminal in the root directory called ```rn-guess-number-game/```
 - Follow [Expo](https://expo.io/) guidelines to install their dependency globally and fine tune the project to use either emulator or real device
 - Run ```npm install ``` to install dependencies
 - Finally, Run ``` expo start``` to start the app locally and run it on your chosen testing device
