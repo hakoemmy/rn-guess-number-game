@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import {View, Text, 
     StyleSheet,Button,
     TouchableWithoutFeedback,
-    Keyboard, Alert
+    Keyboard, Alert, Dimensions,
+    KeyboardAvoidingView, ScrollView
 } from 'react-native';
 import Card from '../components/Card';
 import Input from '../components/Input';
@@ -53,6 +54,8 @@ const StartGameScreen = props => {
     }
 
     return (
+  <ScrollView>
+    <KeyboardAvoidingView behavior="position" keyboardVerticalOffset={30}>
      <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
         <View style={styles.screen}>
            <TitleText style={styles.title}>Start a new Game!</TitleText>
@@ -73,6 +76,8 @@ const StartGameScreen = props => {
            {confirmedOutPut}
         </View>
     </TouchableWithoutFeedback>
+    </KeyboardAvoidingView>
+ </ScrollView>
     );
 }
 
@@ -88,8 +93,9 @@ const styles = StyleSheet.create({
        fontFamily:'open-sans-bold'
     },
     inputContainer: {
-        width: 300,
-        maxWidth:'80%',
+        width: '80%',
+        maxWidth:'95%',
+        minWidth: 300,
         alignItems: 'center',
     },
     btnContainer: {
@@ -99,7 +105,8 @@ const styles = StyleSheet.create({
      paddingHorizontal: 10
     },
     btn:{
-      width: '40%'
+      //width: 100
+      width: Dimensions.get('window').width / 4
     },
     input: {
         width: 50,
