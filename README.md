@@ -1,5 +1,5 @@
 # rn-guess-number-game
-> You input a number of your choice and computer tries to do some guesses and it never fails!
+> You input a number of your choice and computer tries to do some guesses and it never fails for sure!
 ## Tools used
 - [Expo](https://expo.io/)
 ## Screenshoots
